@@ -169,10 +169,11 @@ button {
 }
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 5%;
+  padding: 5% 0;
+  width: 100%;
 }
 .galerie div {
   color: white;
@@ -187,7 +188,7 @@ button {
 }
 .card {
   width: 250px;
-  height: 250px;
+  height: 350px;
   padding: 2rem 1rem;
   background: #fff;
   position: relative;
