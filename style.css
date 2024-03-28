@@ -197,7 +197,7 @@ button {
   transition: 0.7s ease-in-out;
 }
 .card:hover {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
 }
 .card:before {
   content: "";
