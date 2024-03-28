@@ -144,10 +144,14 @@ button {
   color: white;
   cursor: pointer;
 }
+/** Hero **/
+.hero {
+  height: 100vh;
+}
 
 /********* À propos *********/
 .apropos {
-  align-items: center;
+  height: 100vh;
 }
 .apropos div p {
   color: white;
@@ -185,8 +189,8 @@ button {
   font-size: 18px;
 }
 .card {
-  width: 450px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   padding: 2rem 1rem;
   background: #fff;
   position: relative;
