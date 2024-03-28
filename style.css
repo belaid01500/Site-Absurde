@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url(./images/bgl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+/****** Général ******/
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+a:hover {
+  color: aqua;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+  gap: 60px;
+}
+
+/******** FlexBox **********/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-colum {
+  flex-direction: column;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.paddings {
+  padding: 2% 10%;
+}
+
+.w60 {
+  width: 60%;
+}
+.w1100 {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.margins {
+  margin: 6rem 0 6rem 0;
+}
+
+/******* Header *********/
+
+header {
+  position: sticky;
+  align-items: center;
+  z-index: 2;
+  top: 0;
+  box-shadow: 0 3px 15px rgba(100, 99, 99, 0.283);
+  background-color: #041a25c0;
+}
+
+/********* HERO **********/
+.hero {
+  height: 70vh;
+  margin-top: 30px;
+}
+.hero h2 {
+  letter-spacing: 30px;
+  font-size: 3.3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+.box-contain {
+  gap: 45px;
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  margin-bottom: 60px;
+}
+
+.container-text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.9rem;
+  justify-content: center;
+  padding: 4%;
+}
+
+.container-text p {
+  margin-bottom: 60px;
+}
+
+form {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+}
+button {
+  position: relative;
+  height: 44px;
+  width: 80px;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 1rem;
+  background-color: #041a25c0;
+  color: white;
+  cursor: pointer;
+}
+
+/********* À propos *********/
+.apropos {
+  align-items: center;
+}
+.apropos div p {
+  color: white;
+  width: 30%;
+  line-height: 2rem;
+}
+.apropos h3 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+/******** Galerie *********/
+.galerie {
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 5%;
+}
+.galerie div {
+  color: white;
+  text-align: center;
+}
+.galerie h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.galerie p {
+  font-size: 18px;
+}
+.card {
+  width: 450px;
+  height: 350px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5 ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-30px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    0deg,
+    rgba(13, 49, 7, 1) 0%,
+    rgba(22, 35, 17, 0.5648460067620799) 33%,
+    rgba(25, 7, 49, 0) 100%
+  );
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.info a {
+  color: red;
+}
+.card .info h3 {
+  margin: 0;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+/******* AVIS ********/
+.card-avis {
+  background: grey;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  border-radius: 20px;
+}
+.card-main img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card-main h3 {
+  margin-bottom: 20px;
+}
+/******** Footer ********/
+footer {
+  background-color: rgba(0, 0, 0, 0.562);
+}
+footer h1 {
+  color: rgb(212, 24, 24);
+  font-size: 3rem;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top a {
+  font-size: 1.5rem;
+}
+.top p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  margin-top: 50px;
+}
