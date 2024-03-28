@@ -302,3 +302,17 @@ footer h1 {
   gap: 65px;
   margin-top: 50px;
 }
+
+/** Media query smartphone **/
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    background-color: red;
+  }
+  nav {
+    display: none;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
