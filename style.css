@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  background-color: rgb(24, 10, 2);
 }
 
 /****** Général ******/
@@ -274,6 +275,7 @@ button {
 /******** Footer ********/
 footer {
   background-color: rgba(0, 0, 0, 0.562);
+  height: 100vh;
 }
 footer h1 {
   color: rgb(212, 24, 24);
