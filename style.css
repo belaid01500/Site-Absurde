@@ -325,6 +325,7 @@ footer h1 {
   .hero {
     width: 100%;
     padding: 10% 10%;
+    height: max-content;
   }
   .hero h2 {
     width: 100%;
@@ -347,14 +348,12 @@ footer h1 {
   .galerie {
     width: 100%;
     height: max-content;
+    padding: 20% 0;
   }
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     padding: 10px 20px;
-    width: 100%;
   }
-
   .titre p {
     padding: 0 20px;
   }
