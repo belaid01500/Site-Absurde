@@ -161,6 +161,9 @@ button {
   font-size: 3rem;
   width: 100%;
 }
+.desc p {
+  font-size: 20px;
+}
 
 /******** Galerie *********/
 .galerie {
@@ -253,6 +256,9 @@ button {
   font-size: 15px;
   margin-top: 8px;
   margin-bottom: 20px;
+}
+.titre p {
+  font-size: 1.5rem;
 }
 
 /******* AVIS ********/
